@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "graphql": "^14.1.1",
+    "ra-data-graphcool": "^2.6.0",
+    "react-admin": "^2.7.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}

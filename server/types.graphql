@@ -8,7 +8,7 @@ type User @model {
 
   # Uncomment below - you can declare relations between models like this
 
-  posts: [Post!]!
+  posts: [Post!]! @relation(name: "UsersPosts")
 }
 
 
@@ -19,5 +19,5 @@ type Post @model {
   title: String!
 
   # Every relation also required a back-relation (to determine 1:1, 1:n or n:m)
-  author: User!
+  user: User! @relation(name: "UsersPosts")
 }

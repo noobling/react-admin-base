@@ -11,7 +11,7 @@ export default props => (
   <Create {...props}>
     <SimpleForm>
       <TextInput source="title" />
-      <ReferenceInput source="author" reference="User">
+      <ReferenceInput source="user.id" reference="User">
         <SelectInput optionText="name" />
       </ReferenceInput>
     </SimpleForm>
